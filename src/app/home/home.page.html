@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Google Maps</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <capacitor-google-map #map></capacitor-google-map>
+    <button *ngIf="!created" (click)="createMap()">Create Map</button>
+  </div>
+</ion-content>
